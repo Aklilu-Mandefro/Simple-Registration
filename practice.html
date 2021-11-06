@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Page</title>
+    <style type="text/css">
+      *{
+
+        box-sizing:border-box;
+      }
+      .container{
+padding:20px;
+height: 50%;
+width:40%;
+margin: auto;
+
+      }
+      .regbtn {
+        background-color: green;
+        color: white;
+        padding: 14px;
+        border: none;
+        cursor: pointer;
+      }
+      .rbtn {
+        background-color: red;
+        color: white;
+        padding: 14px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="text"], input[type="email"],
+      input[type="password"]{
+width: 100%;
+padding: 15px;
+border: none;
+background: #f1f1f1;
+      }
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="password"]:focus{
+background: #ddd;
+outline: none;
+      }
+      hr{
+
+        border: 1px solid #f1f1f1;
+      
+      }
+    </style>
+    <script type="text/javascript">
+       function Validate() {
+           var password = document.getElementById("psw").value;
+           var confirmPassword = document.getElementById("cpsw").value;
+           if (password != confirmPassword) {
+               alert("Passwords do not match.");
+               return false;
+           }
+           return true;
+       }
+       </script>
+  </head>
+  <body>
+  <form action="insert.php" method="post">
+<div class="container">
+  <h1>Sign Up</h1>
+  <hr>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" required>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" required>
+  <label for="password">Password</label>
+  <input type="password" name="pass"  id="psw"required>
+  <label for="confirm_password">Confirm Password</label>
+  <input type="password" name="cpass" id="cpsw" required>
+  <hr>
+  <button type="submit" name="submit" class="regbtn" onclick="return Validate()">Register</button>
+  <button type="reset" class="rbtn">Cancel</button>
+</div>
+  </form>
+  </body>
+</html>
