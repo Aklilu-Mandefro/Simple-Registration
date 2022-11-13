@@ -25,6 +25,8 @@
 
 # Simple-Registration
 ===============================================================================<br>
+Are you a beginner with HTML and CSS with PHP MySQL database connection? if so, this simple project will give you an insight in connecting your HTML page with MySQL database server. <br>
+
 This is a simple registration form using html, css and php.
 To run the program,
 
