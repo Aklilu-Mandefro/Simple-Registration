@@ -33,7 +33,7 @@ To run the program,
           B. if you use Wamp Server, put the folder 'Simple Registration' into wamp/www directory.<br>
 2. create a mysql database by any name you  like from the 'phpMyAdmin' of your server.
 3. Create a table by any name you want with Columns: Name, Email and password inside the database you created.
-4. open a browser and type 'localhost/aklilu_website' from the address bar or URL of your browser and hit enter.
+4. open a browser and type 'localhost/Simple-Registration' from the address bar or URL of your browser and hit enter.
 5. Completed.
 
 <hr>
